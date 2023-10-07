@@ -52,6 +52,48 @@ header ul li a {
 header ul li a:hover {
   color: #ff9900;
 }
+/* dark mode styles */
+/* Color variables */
+:root {
+  --primary-bg: #000; /* Background color */
+  --primary-text: #fff; /* Text color */
+  --secondary-bg: #222; /* Secondary background color */
+  --secondary-text: #00ccff; /* Secondary text color (x-ray theme) */
+}
+
+/* Light mode styles */
+body {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: var(--secondary-bg);
+  color: var(--secondary-text);
+}
+
+/* Rest of your existing styles remain the same */
+
+/* Dark mode toggle button styles */
+.dark-mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.dark-mode-toggle .moon-icon,
+.dark-mode-toggle .sun-icon {
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+/* Dark mode transition */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
 /* Hero section styles */
 #hero {
