@@ -14,8 +14,9 @@ body {
 
 /* Header styles */
 header {
-  background-color: #333;
-  color: #fff;
+background: rgb(201,226,82);
+background: linear-gradient(341deg, rgba(201,226,82,1) 0%, rgba(148,187,233,1) 100%);;
+  color: #e5eee0;
   padding: 1rem 0;
 }
 
@@ -97,7 +98,8 @@ body {
 
 /* Hero section styles */
 #hero {
-  background-image: url('hero-background.jpg');
+  background: rgb(201,226,82);
+  background: linear-gradient(341deg, rgba(201,226,82,1) 0%, rgba(148,187,233,1) 100%);;
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -106,6 +108,7 @@ body {
 }
 
 #hero h1 {
+  
   font-size: 36px;
   margin-bottom: 20px;
 }
