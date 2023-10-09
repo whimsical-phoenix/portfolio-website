@@ -1,10 +1,13 @@
 // Function to toggle dark mode
 function toggleDarkMode() {
   const body = document.body;
+  const h1 = document.querySelector("h1");
   const dayIcon = document.querySelector(".day-icon");
   const nightIcon = document.querySelector(".night-icon");
 
   body.classList.toggle("dark-mode");
+  h1.classList.toggle("dark-mode");
+
   const isDarkMode = body.classList.contains("dark-mode");
   localStorage.setItem("dark-mode", isDarkMode);
 
@@ -24,6 +27,7 @@ const isDarkMode = JSON.parse(localStorage.getItem("dark-mode")) || false;
 // Set dark mode initially
 if (isDarkMode) {
   document.body.classList.add("dark-mode");
+  document.querySelector("h1").classList.add("dark-mode");
   document.querySelector(".day-icon").style.display = "none";
   document.querySelector(".night-icon").style.display = "inline-block";
 } else {
