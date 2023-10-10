@@ -1,42 +1,20 @@
-// Function to toggle dark mode
-function toggleDarkMode() {
-  const body = document.body;
-  const h1 = document.querySelector("h1");
-  const dayIcon = document.querySelector(".day-icon");
-  const nightIcon = document.querySelector(".night-icon");
+function startTypewriter() {
+  const text =
+    "Welcome to My Portfolio. I'm a Web Designer passionate about creating stunning web experiences.";
+  let index = 0;
+  const speed = 50; // Adjust typing speed (milliseconds per character)
 
-  body.classList.toggle("dark-mode");
-  h1.classList.toggle("dark-mode");
-
-  const isDarkMode = body.classList.contains("dark-mode");
-  localStorage.setItem("dark-mode", isDarkMode);
-
-  // Toggle icons
-  if (isDarkMode) {
-    dayIcon.style.display = "none";
-    nightIcon.style.display = "inline-block";
-  } else {
-    dayIcon.style.display = "inline-block";
-    nightIcon.style.display = "none";
+  function typeWriter() {
+    if (index < text.length) {
+      document.getElementById("typewriter-text").textContent +=
+        text.charAt(index);
+      index++;
+      setTimeout(typeWriter, speed);
+    }
   }
+
+  typeWriter();
 }
 
-// Check if dark mode is enabled in localStorage
-const isDarkMode = JSON.parse(localStorage.getItem("dark-mode")) || false;
-
-// Set dark mode initially
-if (isDarkMode) {
-  document.body.classList.add("dark-mode");
-  document.querySelector("h1").classList.add("dark-mode");
-  document.querySelector(".day-icon").style.display = "none";
-  document.querySelector(".night-icon").style.display = "inline-block";
-} else {
-  document.querySelector(".day-icon").style.display = "inline-block";
-  document.querySelector(".night-icon").style.display = "none";
-}
-
-// Dark mode toggle button click event
-const darkModeToggle = document.querySelector(".dark-mode-toggle");
-if (darkModeToggle) {
-  darkModeToggle.addEventListener("click", toggleDarkMode);
-}
+// Start the typewriter effect when the page loads
+window.addEventListener("load", startTypewriter);
