@@ -1,165 +1,159 @@
 /* Reset some default styles */
-body, h1, h2, h3, p {
+body,
+h1,
+h2,
+h3,
+p {
   margin: 0;
   padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 1px;
 }
 
 /* Basic styles */
 body {
-  font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f7f7f7;
+  background-color: #f5f5f5;
   color: #333;
 }
 
 /* Header styles */
-header {
-background: rgb(201,226,82);
-background: linear-gradient(341deg, rgba(201,226,82,1) 0%, rgba(148,187,233,1) 100%);;
-  color: #e5eee0;
+header.novel-theme {
+  background-color: #333;
+  color: #f5f5f5;
   padding: 1rem 0;
 }
 
-header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-header .logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-header ul {
+header.novel-theme nav ul {
   list-style: none;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-header ul li {
-  margin-right: 20px;
+header.novel-theme nav ul li {
+  margin: 0 20px;
 }
 
-header ul li a {
+header.novel-theme nav ul li a {
   text-decoration: none;
-  color: #fff;
-  font-weight: 500;
+  color: #f5f5f5;
   transition: color 0.3s ease-in-out;
 }
 
-header ul li a:hover {
+header.novel-theme nav ul li a:hover {
   color: #ff9900;
 }
-/* dark mode styles */
-/* Color variables */
-:root {
-  --primary-bg: #000; /* Background color */
-  --primary-text: #fff; /* Text color */
-  --secondary-bg: #222; /* Secondary background color */
-  --secondary-text: #00ccff; /* Secondary text color (x-ray theme) */
-}
+/* Navigation Bar Styles */
 
-/* Light mode styles */
-body {
-  background-color: var(--primary-bg);
-  color: var(--primary-text);
-}
-
-/* Dark mode styles */
-body.dark-mode {
-  background-color: var(--secondary-bg);
-  color: var(--secondary-text);
-}
-
-/* Rest of your existing styles remain the same */
-
-/* Dark mode toggle button styles */
-.dark-mode-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
-  z-index: 999;
-}
-
-.dark-mode-toggle .night-icon,
-.dark-mode-toggle .day-icon {
-  font-size: 24px;
-  vertical-align: middle;
-}
-
-/* Dark mode transition */
-body {
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Hero section styles */
-#hero {
-  background: rgb(201,226,82);
-  background: linear-gradient(341deg, rgba(201,226,82,1) 0%, rgba(148,187,233,1) 100%);;
-  background-size: cover;
-  background-position: center;
+header.novel-theme nav {
   text-align: center;
-  color: #fff;
-  padding: 6rem 0;
 }
 
-#hero h1 {
-  
-  font-size: 36px;
+header.novel-theme nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header.novel-theme nav ul li {
+  margin: 0 20px;
+}
+
+header.novel-theme nav ul li a {
+  text-decoration: none;
+  color: #ff9900; /* Highlight color */
+  font-size: 24px; /* Adjust font size */
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+header.novel-theme nav ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px; /* Adjust underline height */
+  background-color: #ff9900; /* Highlight color */
+  transform: scaleX(0); /* Initially hidden */
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+header.novel-theme nav ul li a:hover::before {
+  transform: scaleX(1); /* Show underline on hover */
+  transform-origin: left;
+}
+section.novel-theme {
+  text-align: center;
+  padding: 4rem 0;
+  background-image: url("hero-background.jpg"); /* Replace with your image */
+  background-size: cover;
+  color: #2e1f1f; /* Adjust text color */
+}
+
+section.novel-theme h1 {
+  font-size: 48px; /* Increase font size */
   margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
 }
 
-#hero p {
-  font-size: 18px;
+section.novel-theme p {
+  font-size: 20px; /* Increase font size */
   margin-bottom: 30px;
 }
-
-#hero .cta-button {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #ff9900;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 4px;
-  transition: background-color 0.3s ease-in-out;
-}
-
-#hero .cta-button:hover {
-  background-color: #333;
-}
-
-/* About section styles */
-#about {
-  background-color: #fff;
+#about.novel-theme {
+  background-color: #f5f5f5; /* Light background color */
   padding: 4rem 0;
 }
 
-#about h2 {
-  font-size: 28px;
+#about.novel-theme h2 {
+  font-size: 32px; /* Increase font size */
   margin-bottom: 20px;
 }
 
-#about p {
-  font-size: 16px;
+#about.novel-theme p {
+  font-size: 18px; /* Adjust font size */
   max-width: 800px;
   margin: 0 auto;
+  color: #444; /* Adjust text color */
 }
 
+/*Typewriter style effect*/
+#typewriter-text {
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid #000;
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
+}
 /* Portfolio section styles */
-#portfolio {
+#portfolio.novel-theme {
   background-color: #f7f7f7;
   padding: 4rem 0;
-}
-
-#portfolio h2 {
-  font-size: 28px;
-  text-align: center;
-  margin-bottom: 30px;
 }
 
 .portfolio-item {
@@ -168,42 +162,57 @@ body {
   padding: 20px;
   margin: 20px;
   text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio-item img {
   max-width: 100%;
   height: auto;
   border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05);
 }
 
 .portfolio-item h3 {
-  font-size: 18px;
+  font-size: 24px; /* Adjust font size */
   margin-top: 10px;
+  color: #333; /* Adjust text color */
 }
 
 .portfolio-item p {
   font-size: 16px;
+  color: #777; /* Adjust text color */
 }
 
 /* Contact section styles */
-#contact {
+#contact.novel-theme {
   background-color: #333;
-  color: #fff;
+  color: #f5f5f5;
   padding: 4rem 0;
   text-align: center;
 }
 
-#contact h2 {
+#contact.novel-theme h2 {
   font-size: 28px;
   margin-bottom: 20px;
 }
 
-#contact p {
+#contact.novel-theme p {
   font-size: 18px;
   margin-bottom: 30px;
 }
 
-#contact .cta-button {
+#contact.novel-theme .cta-button {
   display: inline-block;
   padding: 12px 24px;
   background-color: #ff9900;
@@ -214,15 +223,56 @@ body {
   transition: background-color 0.3s ease-in-out;
 }
 
-#contact .cta-button:hover {
+#contact.novel-theme .cta-button:hover {
   background-color: #444;
 }
 
 /* Footer styles */
-footer {
+footer.novel-theme {
   text-align: center;
   background-color: #333;
-  color: #fff;
+  color: #f5f5f5;
   padding: 1rem 0;
   font-size: 14px;
 }
+/* Additional Portfolio Styles */
+
+.portfolio-item {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05);
+}
+
+.portfolio-item h3 {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #333; /* Adjust text color */
+}
+
+.portfolio-item p {
+  font-size: 16px;
+  color: #777; /* Adjust text color */
+}
+
+/* Adjust the colors and styles as needed to match your design preferences */
