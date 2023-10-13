@@ -1,15 +1,12 @@
 /* Reset some default styles */
-body,
-h1,
-h2,
-h3,
-p {
+body {
   margin: auto;
   padding: 13;
   font-family: "Homemade Apple", cursive;
   font-size: large;
   letter-spacing: 1.5px;
   line-height: 1.5;
+  color: #0c286a;
 }
 
 /* Basic styles */
@@ -18,7 +15,7 @@ body {
   background-size: cover;
   line-height: 1.6;
   background-color: #f7f7f7;
-  color: #333;
+  color: #0c286a;
 }
 
 /* Header styles */
@@ -58,6 +55,7 @@ div.novel-theme nav ul li a {
 
 div.novel-theme nav ul li a::before {
   content: "";
+
   position: absolute;
   bottom: 0;
   left: 0;
@@ -91,27 +89,80 @@ div.novel-theme nav ul li a:hover::before {
   background-image: linear-gradient(transparent 50%, #ffff99 50%);
   background-size: 100% 200%;
   transition: background-position 0.3s ease;
+  width: fit-content;
 }
 
 .ruled-paper h1:hover,
 .ruled-paper h2:hover,
 .ruled-paper h3:hover {
   background-position: 0 100%;
+  width: fit-content;
 }
 
 main {
-  padding-block-start: 200px;
   margin: auto;
   max-width: 500px;
 }
 
 footer {
   font-family: "Homemade Apple", cursive;
-  color: #151133;
-  float: right;
+  color: #022c30c4;
+  font-size: 1.5rem;
+
+  width: 100%;
 }
 
-#sun {
+.footer {
+  background-color: #ffffff;
+  height: 90px;
+  width: 100%;
+  text-align: right;
+}
+
+img {
   max-width: 20%;
   height: auto;
+}
+
+@font-face {
+  font-family: "smartie-caps regular";
+  src: url(smartie-caps.regular.ttf);
+}
+#name {
+  font-family: "smartie-caps regular";
+  color: rgb(159, 16, 16);
+}
+.textName {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 100px;
+}
+
+.textOccupation {
+  margin: 0;
+  font-size: 70px;
+  padding-left: 3ch;
+}
+
+.btn {
+  background-color: #dddddde8;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #318134a3;
+  color: white;
+}
+
+a {
+  color: rgba(10, 10, 10, 0.821);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
