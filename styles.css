@@ -106,9 +106,9 @@ main {
 
 footer {
   font-family: "Homemade Apple", cursive;
-  color: #022c30c4;
+  color: #e3d652;
   font-size: 1.5rem;
-
+  padding-right: 50px;
   width: 100%;
 }
 
@@ -116,13 +116,17 @@ footer {
   background-color: #ffffff;
   height: 90px;
   width: 100%;
-  text-align: right;
+  text-align: center;
 }
 
 img {
   max-width: 15%;
   height: auto;
-  padding-left: 30px;
+  padding-left: 35px;
+}
+
+.pine {
+  padding-top: 40px;
 }
 
 @font-face {
