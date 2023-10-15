@@ -11,7 +11,7 @@ body {
 
 /* Basic styles */
 body {
-  background-image: url("printable-lined-paper-college-ruled_page-0001.jpg"); /* Replace with your ruled paper image */
+  background-image: url("printable-lined-paper-college-ruled_page-0001.jpg"); /* Ruled paper image */
   background-size: cover;
   line-height: 1.6;
   background-color: #f7f7f7;
@@ -46,7 +46,7 @@ div.novel-theme nav ul li a {
   text-align: right; /* Align the navigation to the right */
   text-decoration: none;
   color: #151133;
-  font-family: "Homemade Apple", cursive; /* Use a custom font */
+  font-family: "Homemade Apple", cursive;
   font-size: 24px;
   position: relative;
   overflow: hidden;
@@ -72,6 +72,15 @@ div.novel-theme nav ul li a:hover::before {
   transform-origin: left;
   background-color: #c3ff00ca; /* Yellow highlighter effect on hover */
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Smooth transition */
+}
+
+#date {
+  padding-left: 7ch;
+  text-decoration: underline wavy;
+  margin-bottom: auto;
+  transform: rotate(-9deg);
+  height: 20px;
+  width: fit-content;
 }
 
 /* Portfolio section styles with ruled paper background */
@@ -120,7 +129,7 @@ footer {
 }
 
 img {
-  max-width: 15%;
+  max-width: 13.5%;
   height: auto;
   padding-left: 35px;
 }
