@@ -22,6 +22,14 @@
         alt="sun"
         id="sun" />
     </div>
+    <div>
+      <p id="date"></p>
+
+      <script>
+        const d = new Date();
+        document.getElementById("date").innerHTML = d.toDateString();
+      </script>
+    </div>
 
     <div class="container"></div>
     <main>
