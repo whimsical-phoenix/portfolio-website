@@ -75,7 +75,7 @@ div.novel-theme nav ul li a:hover::before {
 }
 
 #date {
-  padding-left: 7ch;
+  padding-left: 8ch;
   text-decoration: underline wavy;
   margin-bottom: auto;
   transform: rotate(-9deg);
@@ -87,7 +87,6 @@ div.novel-theme nav ul li a:hover::before {
 .ruled-paper {
   padding: 2rem 0;
   background-size: cover;
-  color: #2e1f1f;
 }
 
 .ruled-paper h1,
@@ -95,27 +94,30 @@ div.novel-theme nav ul li a:hover::before {
 .ruled-paper h3 {
   display: block;
   text-shadow: none; /* Remove text shadow */
-  background-image: linear-gradient(transparent 50%, #ffff99 50%);
+  background-image: linear-gradient(transparent 50%, #aade6691 50%);
   background-size: 100% 200%;
   transition: background-position 0.3s ease;
-  width: fit-content;
 }
 
 .ruled-paper h1:hover,
 .ruled-paper h2:hover,
 .ruled-paper h3:hover {
   background-position: 0 100%;
-  width: fit-content;
 }
 
 main {
   margin: auto;
-  max-width: 650px;
+  max-width: 750px;
+}
+
+h2.heading {
+  color: #0c286a;
+  text-align: center;
 }
 
 footer {
   font-family: "Homemade Apple", cursive;
-  color: #e3d652;
+  color: #aa9c02;
   font-size: 1.5rem;
   padding-right: 50px;
   width: 100%;
@@ -129,7 +131,7 @@ footer {
 }
 
 img {
-  max-width: 13.5%;
+  max-width: 13%;
   height: auto;
   padding-left: 35px;
 }
@@ -144,12 +146,14 @@ img {
 }
 #name {
   font-family: "smartie-caps regular";
-  color: rgb(159, 16, 16);
+  color: rgb(11, 1, 1);
+  background-image: url("blue hatch png.png");
+  background-size: 100% 100%;
 }
 .textName {
-  width: 700px;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  width: 90%;
+  margin-top: 0px;
+  margin-bottom: 0.1px;
   font-size: 100px;
 }
 
