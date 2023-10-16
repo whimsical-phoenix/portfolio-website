@@ -3,19 +3,19 @@ body {
   margin: auto;
   padding: 13;
   font-family: "Homemade Apple", cursive;
-  font-size: large;
+  font-size: larger;
   letter-spacing: 1.5px;
   line-height: 1.5;
-  color: #0c286a;
+  color: #000103;
 }
 
 /* Basic styles */
 body {
   background-image: url("grid-white.png"); /* Ruled paper image */
-  background-size: cover;
+  background-size: 30%;
   line-height: 1.6;
   background-color: #f7f7f7;
-  color: #0c286a;
+  color: #000103;
 }
 
 /* Header styles */
@@ -111,23 +111,22 @@ main {
 }
 
 h2.heading {
-  color: #0c286a;
+  color: #af1515;
   text-align: center;
 }
 
 footer {
   font-family: "Homemade Apple", cursive;
-  color: #aa9c02;
+  color: #000007;
   font-size: 1.5rem;
   padding-right: 50px;
-  width: 100%;
+  width: 80%;
 }
 
 .footer {
-  background-color: #ffffff;
-  height: 90px;
+  height: 50px;
   width: 100%;
-  text-align: center;
+  text-align: right;
 }
 
 img {
