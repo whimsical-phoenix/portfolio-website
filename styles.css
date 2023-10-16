@@ -116,11 +116,11 @@ h2.heading {
 }
 
 footer {
-  font-family: "Homemade Apple", cursive;
+  font-family: "winonasignature script";
   color: #000007;
-  font-size: 1.5rem;
+  font-size: 50px;
+  font-weight: bold;
   padding-right: 50px;
-  width: 80%;
 }
 
 .footer {
@@ -143,6 +143,11 @@ img {
 @font-face {
   font-family: "smartie-caps regular";
   src: url(smartie-caps.regular.ttf);
+}
+
+@font-face {
+  font-family: "winonasignature script";
+  src: url(winonasignature.script.ttf);
 }
 #name {
   height: 200px;
@@ -193,4 +198,14 @@ a {
 .flex-container {
   display: flex;
   justify-content: space-around;
+}
+
+.arrow {
+  rotate: 90deg;
+  margin-left: 25ch;
+}
+
+.praptiSketch {
+  max-width: 20%;
+  height: auto;
 }
