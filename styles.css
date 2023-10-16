@@ -11,7 +11,7 @@ body {
 
 /* Basic styles */
 body {
-  background-image: url("printable-lined-paper-college-ruled_page-0001.jpg"); /* Ruled paper image */
+  background-image: url("grid-white.png"); /* Ruled paper image */
   background-size: cover;
   line-height: 1.6;
   background-color: #f7f7f7;
@@ -138,6 +138,7 @@ img {
 
 .pine {
   padding-top: 40px;
+  max-width: 18%;
 }
 
 @font-face {
