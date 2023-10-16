@@ -189,3 +189,8 @@ a {
   text-decoration: none;
   display: inline-block;
 }
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
