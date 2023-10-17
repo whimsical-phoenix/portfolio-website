@@ -222,16 +222,15 @@ a {
 }
 
 #animatedLetters {
-  background-color: #22222275;
-  color: #0f0d0d;
+  color: #000b0b;
   font-weight: 400;
-  font-size: 2vw;
+  font-size: 3vw;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Khula", sans-serif;
+  font-family: "great-ink regular";
   height: 100vh;
   box-sizing: border-box;
   letter-spacing: 6px;
