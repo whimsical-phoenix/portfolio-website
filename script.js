@@ -1,20 +1,27 @@
-function startTypewriter() {
-  const text =
-    "Welcome to My Portfolio. I'm a Web Designer passionate about creating stunning web experiences.";
-  let index = 0;
-  const speed = 50; // Adjust typing speed (milliseconds per character)
+import Letterize from "https://cdn.skypack.dev/letterizejs@2.0.0";
+const test = new Letterize({
+  targets: ".animate-me",
+});
 
-  function typeWriter() {
-    if (index < text.length) {
-      document.getElementById("typewriter-text").textContent +=
-        text.charAt(index);
-      index++;
-      setTimeout(typeWriter, speed);
-    }
-  }
+const animation = anime.timeline({
+  targets: test.listAll,
+  delay: anime.stagger(100, {
+    grid: [test.list[0].length, test.list.length],
+    from: "center",
+  }),
+  loop: true,
+});
 
-  typeWriter();
-}
-
-// Start the typewriter effect when the page loads
-window.addEventListener("load", startTypewriter);
+animation
+  .add({
+    scale: 0.5,
+  })
+  .add({
+    letterSpacing: "10px",
+  })
+  .add({
+    scale: 1,
+  })
+  .add({
+    letterSpacing: "6px",
+  });
