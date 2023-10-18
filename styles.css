@@ -16,6 +16,7 @@ body {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
+  nav 
 }
 
 /* Smartphones (landscape) ----------- */
@@ -29,7 +30,7 @@ body {
 }
 /* Basic styles */
 body {
-  background-image: url("grid-white.png"); /* Ruled paper image */
+  background:  linear-gradient(rgba(255, 255, 255, 0.63), rgba(255, 255, 255, 0.63)), url("grid-white.png"); /* Ruled paper image */
   background-size: 30%;
   line-height: 1.6;
   background-color: #f7f7f7;
@@ -40,20 +41,21 @@ body {
 /* Navigation Bar Styles */
 #container {
   position: right;
-  float: right;
   margin: 20px;
   width: auto;
+  float: right;
 }
 div.novel-theme nav {
   text-align: right; /* Align the navigation to the right */
 }
 
 div.novel-theme nav ul {
-  text-align: right; /* Align the navigation to the right */
-  list-style: none;
+  display: flex;
   padding: 0;
   margin: 0;
-  display: flex;
+  list-style: none;
+
+  text-align: right; /* Align the navigation to the right */
 }
 
 div.novel-theme nav ul li {
@@ -61,19 +63,19 @@ div.novel-theme nav ul li {
 }
 
 div.novel-theme nav ul li a {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+
   text-align: right; /* Align the navigation to the right */
   text-decoration: none;
   color: #151133;
   font-family: "great-ink regular";
   font-size: 3ch;
-  position: relative;
-  overflow: hidden;
-  display: inline-block;
 }
 
 div.novel-theme nav ul li a::before {
   content: "";
-
   position: absolute;
   bottom: 0;
   left: 0;
