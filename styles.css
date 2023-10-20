@@ -301,3 +301,13 @@ span {
   font-weight: 400;
 }
 
+.tic-tac-toe {
+  transform: rotate(-9deg);
+  transition: transform .4s;
+}
+
+a.tic-tac-toe:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
