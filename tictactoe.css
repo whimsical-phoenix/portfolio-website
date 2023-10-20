@@ -11,8 +11,10 @@ body {
     ),
     url("grid-white.png"); /* Ruled paper image */
   background-size: 30%;
-  background-color: ;
+  font-family: "vtks-chalk-79 regular";
+  text-align: center;
 }
+
 input[type="radio"] {
   position: absolute;
   top: -9999em;
@@ -52,7 +54,6 @@ form {
   left: 0;
   background: rgba(0, 0, 0, 0.1);
   font-family: "vtks-chalk-79 regular";
-  font-weight: ;
 }
 
 .tile div {
@@ -165,7 +166,7 @@ input[id*="-6-x"]:checked ~ #board #tile-6 div::before,
 input[id*="-7-x"]:checked ~ #board #tile-7 div::before,
 input[id*="-8-x"]:checked ~ #board #tile-8 div::before {
   content: "X";
-  background: #00497473;
+  background: #04740073;
   color: #010b0e;
 }
 
@@ -179,7 +180,7 @@ input[id*="-6-o"]:checked ~ #board #tile-6 div::before,
 input[id*="-7-o"]:checked ~ #board #tile-7 div::before,
 input[id*="-8-o"]:checked ~ #board #tile-8 div::before {
   content: "O";
-  background: #a6001132;
+  background: #18b4d366;
   color: #010b0e;
 }
 
