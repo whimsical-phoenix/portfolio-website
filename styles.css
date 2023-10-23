@@ -51,6 +51,7 @@ div.novel-theme nav {
 
 div.novel-theme nav ul {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -97,7 +98,6 @@ div.novel-theme nav ul li a:hover::before {
 #date {
   color: rgba(6, 142, 6, 0.896);
   padding-left: 2%;
-  text-decoration: underline wavy 2px;
   margin-bottom: auto;
   transform: rotate(-9deg);
   height: 20px;
@@ -130,6 +130,7 @@ div.novel-theme nav ul li a:hover::before {
 main {
   margin: auto;
   max-width: 750px;
+  min-width: 300px;
 }
 
 h2.heading {
@@ -180,10 +181,12 @@ img {
   width: 650px;
   padding-top: 80px;
   padding-left: 95px;
+  margin-bottom: 2ch;
   font-family: "smartie-caps regular";
   color: rgb(11, 1, 1);
   background-image: url("textbubble.png");
   background-size: 100% 100%;
+
 }
 .textName {
   width: 90%;
@@ -269,10 +272,6 @@ a {
   justify-content: space-around;
 }
 
-.arrow {
-  rotate: 90deg;
-  margin-left: 25ch;
-}
 
 /* animated letters styles */
 #animatedLetters {
@@ -285,10 +284,10 @@ a {
   text-align: center;
   text-transform: uppercase;
   font-family: "great-ink regular";
-  height: 100vh;
+  height: 90vh;
   box-sizing: border-box;
   letter-spacing: 6px;
-  margin: 0;
+  margin-top: 1ch;
   line-height: 1.2;
 }
 
@@ -302,13 +301,17 @@ span {
 }
 
 .tic-tac-toe {
+
   width: fit-content;
   transform: rotate(-9deg);
+  
   
 }
 
 .tictac {
+  margin-top: 3cch;
   transition: transform .4s;
+  float: right;
 }
 .tictac:hover {
   -ms-transform: scale(1.5); /* IE 9 */
