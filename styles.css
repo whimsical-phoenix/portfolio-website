@@ -273,7 +273,7 @@ a {
 }
 
 
-/* animated letters styles */
+/* animated letters styles
 #animatedLetters {
   color: #000b0b;
   font-weight: 400;
@@ -289,7 +289,7 @@ a {
   letter-spacing: 6px;
   margin-top: 2ch;
   line-height: 1.2;
-}
+} */
 
 span {
   display: inline-block;
@@ -302,7 +302,7 @@ span {
 
 .tic-tac-toe {
   width: 800px;
-  transform: rotate(-9deg);  
+  transform: rotate(9deg);  
 }
 
 .tictac {
