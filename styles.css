@@ -16,21 +16,43 @@ body {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
-  nav 
+  body {
+    background-color: aliceblue;
+  }
+  #name {
+    font-size: 3ch;
+  }
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) {
   /* Styles */
+  body {
+    background-color: aliceblue;
+  }
+  #name {
+    font-size: 3ch;
+  }
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
   /* Styles */
+  body {
+    background-color: aliceblue;
+    font-size: 16px;
+  }
+  #name {
+    font-size: 3ch;
+  }
 }
 /* Basic styles */
 body {
-  background:  linear-gradient(rgba(255, 255, 255, 0.63), rgba(255, 255, 255, 0.63)), url("grid-white.png"); /* Ruled paper image */
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.63),
+      rgba(255, 255, 255, 0.63)
+    ),
+    url("grid-white.png"); /* Ruled paper image */
   background-size: 30%;
   line-height: 1.6;
   background-color: #f7f7f7;
@@ -186,7 +208,6 @@ img {
   color: rgb(11, 1, 1);
   background-image: url("textbubble.png");
   background-size: 100% 100%;
-
 }
 .textName {
   width: 90%;
@@ -204,7 +225,6 @@ img {
 button {
   align-items: center;
 }
-
 
 /* CSS */
 .btn {
@@ -259,7 +279,6 @@ button {
   }
 }
 
-
 a {
   color: rgba(10, 10, 10, 0.821);
   text-align: center;
@@ -271,7 +290,6 @@ a {
   display: flex;
   justify-content: space-around;
 }
-
 
 /* animated letters styles
 #animatedLetters {
@@ -302,47 +320,71 @@ span {
 
 .tic-tac-toe {
   width: 800px;
-  transform: rotate(9deg);  
+  transform: rotate(9deg);
 }
 
 .tictac {
-  
   margin-top: 4ch;
   margin-left: 2ch;
-  transition: transform .4s;
+  transition: transform 0.4s;
   float: right;
 }
 .tictac:hover {
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5); 
+  transform: scale(1.5);
 }
 
 .cloudImg {
-  max-width: 20%;
+  max-width: 18.5%;
   float: right;
   padding: 2ch;
- 
+  margin-bottom: 2ch;
+  margin-right: 2ch;
+  position: relative;
+  top: -11ch;
 }
 
 .cloudImg:hover {
   animation: shake 0.5s;
-
 }
 
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
-
-
+a {
+  display: block;
+}
