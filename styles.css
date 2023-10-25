@@ -13,39 +13,7 @@ body {
   line-height: 1.5;
   color: #000103;
 }
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* Styles */
-  body {
-    background-color: aliceblue;
-  }
-  #name {
-    font-size: 3ch;
-  }
-}
 
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-  /* Styles */
-  body {
-    background-color: aliceblue;
-  }
-  #name {
-    font-size: 3ch;
-  }
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
-  /* Styles */
-  body {
-    background-color: aliceblue;
-    font-size: 16px;
-  }
-  #name {
-    font-size: 3ch;
-  }
-}
 /* Basic styles */
 body {
   background: linear-gradient(
@@ -402,5 +370,39 @@ a {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  body {
+    background-color: aliceblue;
+  }
+  #name {
+    font-size: 3ch;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+  body {
+    background-color: aliceblue;
+  }
+  #name {
+    font-size: 3ch;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+  body {
+    background-color: aliceblue;
+    font-size: 16px;
+  }
+  #name {
+    font-size: 3ch;
   }
 }
