@@ -311,6 +311,7 @@ span {
   margin-right: 2ch;
   position: relative;
   top: -11ch;
+  transform: rotate(13deg);
 }
 
 .cloudImg:hover {
