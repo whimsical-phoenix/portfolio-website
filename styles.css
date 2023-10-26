@@ -21,7 +21,7 @@ body {
       rgba(255, 255, 255, 0.63)
     ),
     url("grid-white.png"); /* Ruled paper image */
-  background-size: 30%;
+  background-attachment: scroll;
   line-height: 1.6;
   background-color: #f7f7f7;
   color: #000103;
@@ -382,7 +382,7 @@ a {
   body {
     display: inline-block;
     text-align: justify;
-    font-size: 3ch;
+    font-size: 6ch;
     letter-spacing: normal;
     padding-left: 5%;
     padding-right: 5%;
@@ -398,8 +398,8 @@ a {
     height: auto;
     margin-bottom: 0;
     padding-left: 56px;
-    font-size: 11ch;
-    text-align: right;
+    font-size: 9.5ch;
+    text-align: center;
   }
   h2.heading {
     text-align: justify;
@@ -428,7 +428,7 @@ a {
   /* Styles */
   body {
     display: inline-block;
-    font-size: 3ch;
+    font-size: 6ch;
     text-align: justify;
     padding-left: 5%;
     padding-right: 5%;
@@ -445,8 +445,8 @@ a {
     height: auto;
     margin-bottom: 0;
     padding-left: 56px;
-    font-size: 11ch;
-    text-align: right;
+    font-size: 9.5ch;
+    text-align: center;
   }
   h2.heading {
     text-align: justify;
