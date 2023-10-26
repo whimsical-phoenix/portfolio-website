@@ -383,6 +383,7 @@ a {
     font-size: 2ch;
     padding-left: 5%;
     padding-right: 5%;
+    width: 1184px;
   }
   .textName {
     font-size: 6ch;
@@ -392,7 +393,7 @@ a {
     width: auto;
     height: auto;
     margin-bottom: 0;
-    padding-left: 47px;
+    padding-left: 56px;
   }
   h2.heading {
     text-align: justify;
@@ -424,16 +425,17 @@ a {
     text-align: justify;
     padding-left: 5%;
     padding-right: 5%;
+    width: 1184px;
   }
   .textName {
-    font-size: 4ch;
+    font-size: 6ch;
   }
   #name {
     background-image: none;
     width: auto;
     height: auto;
     margin-bottom: 0;
-    padding-left: 47px;
+    padding-left: 56px;
   }
   h2.heading {
     text-align: justify;
