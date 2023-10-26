@@ -182,9 +182,6 @@ img {
   font-size: 100px;
   font-weight: 400;
 }
-.textName {
-}
-
 .textOccupation {
   margin: 0;
   font-size: 70px;
@@ -389,7 +386,8 @@ a {
     max-width: max-content;
     height: 100vh;
   }
-  .textName {
+  .cloudImg {
+    max-width: 30%;
   }
   #name {
     display: inline;
@@ -421,6 +419,9 @@ a {
   footer {
     text-align: center;
   }
+  #sun {
+    max-width: 30%;
+  }
 }
 
 /* Smartphones (portrait) ----------- */
@@ -436,7 +437,8 @@ a {
     height: 100vh;
     letter-spacing: normal;
   }
-  .textName {
+  .cloudImg {
+    max-width: 30%;
   }
   #name {
     display: inline;
@@ -468,5 +470,8 @@ a {
   }
   footer {
     text-align: center;
+  }
+  #sun {
+    max-width: 30%;
   }
 }
