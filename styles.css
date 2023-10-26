@@ -91,7 +91,7 @@ div.novel-theme nav ul li a:hover::before {
   margin-bottom: auto;
   transform: rotate(-9deg);
   height: 20px;
-  width: fit-content;
+  max-width: fit-content;
 }
 
 /* Portfolio section styles with ruled paper background */
@@ -104,7 +104,7 @@ div.novel-theme nav ul li a:hover::before {
 .ruled-paper h2,
 .ruled-paper h3 {
   display: block;
-  width: fit-content;
+  max-width: fit-content;
   text-shadow: none; /* Remove text shadow */
   background-image: linear-gradient(transparent 50%, #c5f440a1 50%);
   background-size: 100% 200%;
@@ -168,7 +168,7 @@ img {
 
 #name {
   height: 200px;
-  width: 650px;
+  max-width: max-content;
   padding-top: 80px;
   padding-left: 95px;
   margin-bottom: 2ch;
@@ -176,12 +176,13 @@ img {
   color: rgb(11, 1, 1);
   background-image: url("textbubble.png");
   background-size: 100% 100%;
-}
-.textName {
-  width: 90%;
+  max-width: 90%;
   margin-top: 0px;
   margin-bottom: 0.1px;
   font-size: 100px;
+  font-weight: 400;
+}
+.textName {
 }
 
 .textOccupation {
@@ -216,8 +217,9 @@ button {
   position: relative;
   cursor: pointer;
   transform: rotate(-2deg);
-  user-select: none;
+
   -webkit-user-select: none;
+  user-select: none;
   touch-action: manipulation;
 }
 
@@ -378,35 +380,42 @@ a {
 @media only screen and (max-device-width: 480px) {
   /* Styles */
   body {
-    background-color: aliceblue;
+    display: inline-block;
+    background-color: rgb(236, 240, 244);
+    background-image: none;
     text-align: justify;
-    font-size: 2ch;
+    font-size: 3ch;
+    letter-spacing: normal;
     padding-left: 5%;
     padding-right: 5%;
-    width: 1184px;
+    max-width: max-content;
+    height: 100vh;
   }
   .textName {
-    font-size: 6ch;
   }
   #name {
+    display: inline;
     background-image: none;
     width: auto;
     height: auto;
     margin-bottom: 0;
     padding-left: 56px;
+    font-size: 11ch;
+    text-align: right;
   }
   h2.heading {
     text-align: justify;
-    font-size: 3.4ch;
+    font-size: 5ch;
   }
   .novel-theme nav ul {
-    font-size: 2ch;
+    font-size: 3.5ch;
   }
   #date {
-    font-size: 1.2ch;
+    font-size: 2.5ch;
   }
   main {
     margin: 0;
+    max-width: max-content;
   }
   .tictac {
     float: none;
@@ -420,35 +429,42 @@ a {
 @media only screen and (max-width: 550px) {
   /* Styles */
   body {
+    display: inline-block;
     background-color: aliceblue;
-    font-size: 16px;
+    background-image: none;
+    font-size: 3ch;
     text-align: justify;
     padding-left: 5%;
     padding-right: 5%;
-    width: 1184px;
+    max-width: max-content;
+    height: 100vh;
+    letter-spacing: normal;
   }
   .textName {
-    font-size: 6ch;
   }
   #name {
+    display: inline;
     background-image: none;
     width: auto;
     height: auto;
     margin-bottom: 0;
     padding-left: 56px;
+    font-size: 11ch;
+    text-align: right;
   }
   h2.heading {
     text-align: justify;
-    font-size: 2ch;
+    font-size: 3ch;
   }
   .novel-theme nav ul {
-    font-size: 2ch;
+    font-size: 3ch;
   }
   #date {
-    font-size: 1.2ch;
+    font-size: 2ch;
   }
   main {
     margin: 0;
+    max-width: max-content;
   }
 
   .tictac {
