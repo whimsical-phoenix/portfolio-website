@@ -410,6 +410,9 @@ a {
   .tictac {
     float: none;
   }
+  footer {
+    text-align: center;
+  }
 }
 
 /* Smartphones (portrait) ----------- */
@@ -448,5 +451,8 @@ a {
 
   .tictac {
     float: none;
+  }
+  footer {
+    text-align: center;
   }
 }
