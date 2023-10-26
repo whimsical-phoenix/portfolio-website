@@ -15,7 +15,7 @@ body {
       rgba(255, 255, 255, 0.63)
     ), */
   background: url("grid-white.png"); /* Ruled paper image */
-  background-size: 30%;
+
   line-height: 1.6;
   font-family: great-ink regular;
 }
