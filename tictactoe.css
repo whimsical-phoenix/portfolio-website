@@ -10,7 +10,7 @@ body {
       rgba(255, 255, 255, 0.63)
     ),
     url("grid-white.png"); /* Ruled paper image */
-  background-size: 30%;
+
   font-family: "vtks-chalk-79 regular";
   text-align: center;
 }
