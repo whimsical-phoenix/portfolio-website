@@ -381,8 +381,6 @@ a {
   /* Styles */
   body {
     display: inline-block;
-    background-color: rgb(236, 240, 244);
-    background-image: none;
     text-align: justify;
     font-size: 3ch;
     letter-spacing: normal;
@@ -430,8 +428,6 @@ a {
   /* Styles */
   body {
     display: inline-block;
-    background-color: aliceblue;
-    background-image: none;
     font-size: 3ch;
     text-align: justify;
     padding-left: 5%;
