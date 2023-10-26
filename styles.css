@@ -380,10 +380,10 @@ a {
   body {
     background-color: aliceblue;
     text-align: justify;
-    font-size: 1ch;
+    font-size: 2ch;
   }
   .textName {
-    font-size: 3ch;
+    font-size: 6ch;
   }
   #name {
     background-image: none;
@@ -393,7 +393,7 @@ a {
   }
   h2.heading {
     text-align: justify;
-    font-size: 1.4ch;
+    font-size: 3.4ch;
   }
   .novel-theme nav ul {
     font-size: 1.4ch;
