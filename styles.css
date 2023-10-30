@@ -516,6 +516,10 @@ a {
   .tictac {
     float: none;
   }
+  .pine {
+    margin-left: 61%;
+    max-width: 34%;
+  }
   footer {
     text-align: center;
   }
@@ -661,6 +665,11 @@ a {
 
   .tictac {
     float: none;
+  }
+
+  .pine {
+    margin-left: 61%;
+    max-width: 34%;
   }
   footer {
     text-align: center;
