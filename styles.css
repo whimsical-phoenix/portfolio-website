@@ -26,7 +26,7 @@ body {
     url("grid-white.png"); /* Ruled paper image */
   background-attachment: scroll;
   line-height: 1.6;
-  background-color: #f7f7f7;
+  background-color: #d6dbe7;
   color: #000103;
 }
 
@@ -526,6 +526,7 @@ a {
   }
   footer {
     text-align: center;
+    font-size: 2.2rem;
   }
   #sun {
     max-width: 30%;
@@ -678,6 +679,7 @@ a {
   }
   footer {
     text-align: center;
+    font-size: 2.2rem;
   }
   #sun {
     max-width: 30%;
