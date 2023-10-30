@@ -1,4 +1,7 @@
 /* Reset some default styles */
+html {
+  scroll-behavior: smooth;
+}
 @font-face {
   font-family: great-ink regular;
   src: url(great-ink.regular.ttf);
