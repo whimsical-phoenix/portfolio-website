@@ -391,7 +391,6 @@ a {
   }
   #name {
     display: inline;
-    background-image: none;
     width: auto;
     height: auto;
     margin-bottom: 0;
@@ -442,7 +441,6 @@ a {
   }
   #name {
     display: inline;
-    background-image: none;
     width: auto;
     height: auto;
     margin-bottom: 0;
