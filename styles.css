@@ -91,6 +91,7 @@ div.novel-theme nav ul li a:hover::before {
   margin-bottom: auto;
   transform: rotate(-9deg);
   height: 20px;
+  max-width: -moz-fit-content;
   max-width: fit-content;
 }
 
@@ -104,6 +105,7 @@ div.novel-theme nav ul li a:hover::before {
 .ruled-paper h2,
 .ruled-paper h3 {
   display: block;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   text-shadow: none; /* Remove text shadow */
   background-image: linear-gradient(transparent 50%, #c5f440a1 50%);
@@ -192,7 +194,7 @@ button {
   align-items: center;
 }
 
-/* CSS */
+/* button */
 .btn {
   background-color: #3dd1e7;
   border: 0 solid #e5e7eb;
@@ -209,7 +211,10 @@ button {
   text-align: center;
   text-decoration: none #000000 solid;
   text-decoration-thickness: auto;
-  width: fit-content;
+
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+
   transition: 0.3s;
   position: relative;
   cursor: pointer;
@@ -374,7 +379,7 @@ a {
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 960px) {
   /* Styles */
   body {
     display: inline-block;
@@ -408,8 +413,8 @@ a {
   }
 
   #menu-bar {
-    width: 45px;
-    height: 40px;
+    width: 55px;
+    height: 45px;
     margin: 30px 0 20px 20px;
     cursor: pointer;
   }
@@ -421,6 +426,7 @@ a {
     display: block;
     border-radius: 5px;
     transition: 0.3s ease;
+    margin: 4px;
   }
 
   #bar1 {
@@ -463,11 +469,11 @@ a {
   }
 
   .menu-bg {
-    z-index: 1;
+    z-index: -10;
     width: 0;
     height: 0;
     margin: 30px 0 20px 20px;
-    background: radial-gradient(circle, #05dcd21f, #05dcd2);
+    background: radial-gradient(circle, #ab30d7, #05dcd2c7);
     border-radius: 50%;
     transition: 0.3s ease;
   }
@@ -493,8 +499,8 @@ a {
   }
 
   .change-bg {
-    width: 520px;
-    height: 460px;
+    width: 920px;
+    height: 860px;
     transform: translate(-60%, -30%);
   }
 
@@ -552,8 +558,8 @@ a {
   }
 
   #menu-bar {
-    width: 45px;
-    height: 40px;
+    width: 55px;
+    height: 45px;
     margin: 30px 0 20px 20px;
     cursor: pointer;
   }
@@ -565,6 +571,7 @@ a {
     display: block;
     border-radius: 5px;
     transition: 0.3s ease;
+    margin: 4px;
   }
 
   #bar1 {
@@ -607,11 +614,11 @@ a {
   }
 
   .menu-bg {
-    z-index: 1;
+    z-index: -10;
     width: 0;
     height: 0;
     margin: 30px 0 20px 20px;
-    background: radial-gradient(circle, #05dcd21f, #05dcd2);
+    background: radial-gradient(circle, #ab30d7, #05dcd2c7);
     border-radius: 50%;
     transition: 0.3s ease;
   }
