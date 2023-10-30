@@ -87,8 +87,7 @@ div.novel-theme nav ul li a:hover::before {
 
 #date {
   color: rgba(6, 142, 6, 0.896);
-  padding-left: 2%;
-  margin-bottom: auto;
+  padding-left: 9%;
   transform: rotate(-9deg);
   height: 20px;
   max-width: -moz-fit-content;
@@ -154,8 +153,9 @@ img {
 }
 
 .pine {
-  padding-top: 40px;
-  max-width: 18%;
+  max-width: 22%;
+  margin-left: 994px;
+  position: relative;
 }
 
 @font-face {
@@ -296,10 +296,10 @@ span {
 }
 
 .tictac {
-  margin-top: 4ch;
-  margin-left: 2ch;
+  margin-top: 2ch;
+  margin-left: -22ch;
   transition: transform 0.4s;
-  float: right;
+  float: left;
 }
 .tictac:hover {
   -ms-transform: scale(1.5); /* IE 9 */
@@ -314,7 +314,7 @@ span {
   margin-bottom: 2ch;
   margin-right: 2ch;
   position: relative;
-  top: -11ch;
+  top: -17ch;
   transform: rotate(13deg);
 }
 
@@ -367,6 +367,7 @@ a {
   animation-duration: 5000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  max-width: 22%;
 }
 
 @keyframes spin {
@@ -392,7 +393,8 @@ a {
     height: 100vh;
   }
   .cloudImg {
-    max-width: 30%;
+    max-width: 22%;
+    position: static;
   }
   #name {
     background-image: none;
@@ -536,7 +538,8 @@ a {
     letter-spacing: normal;
   }
   .cloudImg {
-    max-width: 30%;
+    max-width: 22%;
+    position: static;
   }
   #name {
     display: inline;
