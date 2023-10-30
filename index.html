@@ -10,14 +10,29 @@
   </head>
 
   <body class="novel-theme">
-    <div class="novel-theme" id="container">
-      <nav>
-        <ul>
-          <li><a href="#aboutMe">About</a></li>
-          <li><a href="#portfolios">Projects</a></li>
-          <li><a href="#contactMe">Contact</a></li>
-        </ul>
-      </nav>
+    <div id="menu">
+      <script>
+        function menuOnClick() {
+          document.getElementById("menu-bar").classList.toggle("change");
+          document.getElementById("nav").classList.toggle("change");
+          document.getElementById("menu-bg").classList.toggle("change-bg");
+        }
+      </script>
+      <div id="menu-bar" onclick="menuOnClick()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+      <div class="novel-theme" id="container">
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="#aboutMe">About</a></li>
+            <li><a href="#portfolios">Projects</a></li>
+            <li><a href="#contactMe">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="menu-bg" id="menu-bg"></div>
     </div>
     <div>
       <img
