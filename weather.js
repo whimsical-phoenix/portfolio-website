@@ -22,7 +22,7 @@ window.addEventListener("load", () => {
       lat = position.coords.latitude;
       const base = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${api}&units=metric`;
 
-      // Show the loader while fetching
+      // loader while fetching
       loader.style.display = "block";
 
       // Using fetch to get data
