@@ -427,7 +427,8 @@ input:checked
   text-align: center;
   text-decoration: none #000000 solid;
   text-decoration-thickness: auto;
-  margin-top: 100px;
+  margin-top: 75vh;
+  margin-left: 50vw;
 
   max-width: -moz-fit-content;
   max-width: fit-content;
