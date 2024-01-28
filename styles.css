@@ -7,18 +7,6 @@ html {
   src: url(great-ink.regular.ttf);
 }
 body {
-  margin: auto;
-  padding: 13;
-  font-family: great-ink regular;
-  font-size: 30px;
-
-  letter-spacing: 1.5px;
-  line-height: 1.5;
-  color: #000103;
-}
-
-/* Basic styles */
-body {
   background: linear-gradient(
       rgba(255, 255, 255, 0.63),
       rgba(255, 255, 255, 0.63)
@@ -27,6 +15,14 @@ body {
   background-attachment: scroll;
   line-height: 1.6;
   background-color: #d6dbe7;
+  color: #000103;
+  margin: auto;
+  padding: 13;
+  font-family: great-ink regular;
+  font-size: 30px;
+
+  letter-spacing: 1.5px;
+  line-height: 1.5;
   color: #000103;
 }
 
