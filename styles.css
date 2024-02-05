@@ -582,7 +582,7 @@ a {
 @media only screen and (max-width: 550px) {
   /* Styles */
   body {
-    display: inline-block;
+    display: block;
     font-size: 6ch;
     text-align: justify;
     padding-left: 5%;
@@ -729,7 +729,7 @@ a {
     font-size: 2.2rem;
   }
   #sun {
-    max-width: 20%;
+    max-width: 30%;
   }
   .portfolio {
     max-width: 111%;
