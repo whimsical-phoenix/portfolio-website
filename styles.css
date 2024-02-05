@@ -407,7 +407,7 @@ a {
 .tag-list {
   display: flex;
   font-size: 30px;
-  animation: infiniteScroll 160s linear infinite;
+  animation: infiniteScroll 200s linear infinite;
   min-width: fit-content;
 }
 
