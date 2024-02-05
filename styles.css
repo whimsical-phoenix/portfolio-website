@@ -755,7 +755,6 @@ a {
   }
 
   #skills-container {
-    max-width: 100%;
-    overflow: visible;
+    max-width: 80%;
   }
 }
