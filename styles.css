@@ -757,6 +757,5 @@ a {
   #skills-container {
     max-width: 100%;
     overflow: visible;
-    animation: infiniteScroll 50s linear infinite;
   }
 }
