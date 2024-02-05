@@ -27,6 +27,7 @@
         <nav class="nav" id="nav">
           <ul>
             <li><a href="#aboutMe">About</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#portfolios">Projects</a></li>
             <li><a href="#contactMe">Contact</a></li>
           </ul>
@@ -143,6 +144,60 @@
         <a href="mailto:shahprapti12@gmail.com" class="btn">Get in Touch</a>
       </div>
     </main>
+    <div id="skills-container">
+      <!-- <h2 class="heading">Skills</h2> -->
+      <div id="skills-list" class="tag-list">
+        <!-- Skills will be dynamically added here using JavaScript -->
+      </div>
+    </div>
+
+    <script>
+      const skillsContainer = document.getElementById("skills-list");
+      const skills = [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Responsive Design",
+        "Git",
+        "MongoDB",
+        "ADB Tools",
+        "Web Applications",
+        "Node",
+        "Express",
+        "UI/ UX",
+        "Figma",
+        "Canva",
+        "Animations",
+        "Typescript",
+        "API Integration",
+        "Agile Development",
+        "",
+      ];
+
+      function addSkillsToContainer() {
+        for (let i = 0; i < 18; i++) {
+          const skill = skills[i % skills.length];
+          const skillElement = document.createElement("div");
+          skillElement.classList.add("tag");
+          skillElement.innerHTML = `<span>#</span> ${skill}`;
+          skillsContainer.appendChild(skillElement);
+        }
+      }
+
+      // Initial load
+      addSkillsToContainer();
+
+      // Infinite scroll logic
+      window.addEventListener("scroll", () => {
+        const { scrollTop, scrollHeight, clientHeight } =
+          document.documentElement;
+
+        if (scrollTop + clientHeight >= scrollHeight - 10) {
+          addSkillsToContainer();
+        }
+      });
+    </script>
     <img src="TreesFinal.png" alt="pine Trees" class="pine" />
     <footer>
       <div class="heart">u</div>

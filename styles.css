@@ -389,6 +389,40 @@ a {
   }
 }
 
+/* Horizontally scrolling skills section */
+@keyframes infiniteScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.skills-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.tag-list {
+  display: flex;
+  font-size: 30px;
+  animation: infiniteScroll 160s linear infinite;
+  min-width: fit-content;
+}
+
+.tag {
+  white-space: nowrap;
+  margin-right: 20px; /* Adjust the margin between tags as needed */
+  padding: 10px;
+  border: 4px, solid, #000000;
+  /* border-radius: 0.4rem;
+  box-shadow: 0 0.1rem 0.2rem rgb(0 0 0 / 20%), 0 0.1rem 0.5rem rgb(0 0 0 / 30%),
+    0 0.2rem 1.5rem rgb(0 0 0 / 40%); */
+}
+
+/* Other existing styles */
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-device-width: 960px) {
   /* Styles */
