@@ -745,7 +745,7 @@ a {
   }
 
   .tag-list {
-    font-size: 2ch;
+    font-size: 0.8ch;
     animation: infiniteScroll 50s linear infinite;
 
     /* max-width: 200px;
