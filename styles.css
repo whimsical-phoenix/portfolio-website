@@ -579,7 +579,7 @@ a {
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 550px) {
   /* Styles */
   body {
     display: inline-block;
