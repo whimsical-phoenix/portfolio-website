@@ -578,7 +578,7 @@ a {
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 650px) {
   /* Styles */
   body {
     display: block;
