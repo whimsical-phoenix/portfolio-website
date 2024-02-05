@@ -570,7 +570,13 @@ a {
     font-size: 2.2rem;
   }
   #sun {
-    max-width: 30%;
+    max-width: 20%;
+  }
+  .portfolio {
+    max-width: 30.5%;
+    /* padding: 2ch;
+    margin-bottom: 2ch;
+    margin-right: 2ch; */
   }
 }
 
@@ -723,6 +729,12 @@ a {
     font-size: 2.2rem;
   }
   #sun {
-    max-width: 30%;
+    max-width: 20%;
+  }
+  .portfolio {
+    max-width: 30.5%;
+    /* padding: 2ch;
+    margin-bottom: 2ch;
+    margin-right: 2ch; */
   }
 }
