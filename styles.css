@@ -746,4 +746,8 @@ a {
     font-size: 2ch;
     max-width: 200px;
   }
+
+  .skills-container {
+    max-width: 60%;
+  }
 }
