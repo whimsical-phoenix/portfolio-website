@@ -31,9 +31,9 @@ body {
 }
 
 h1 {
-  padding-top: 1ch;
-  margin-left: 8ch;
-  margin-bottom: 2ch;
+  padding-top: 1.5vh;
+  margin-left: 30vw;
+  margin-bottom: 2vh;
   font-family: "smartie-caps regular";
 
   font-size: 100px;
@@ -105,7 +105,7 @@ img {
 }
 
 footer {
-  margin-top: 40vh;
+  margin-top: 30vh;
   font-family: "great-ink regular";
   color: #000007;
   font-size: 2 rem;
