@@ -1,0 +1,83 @@
+@font-face {
+  font-family: great-ink regular;
+  src: url(great-ink.regular.ttf);
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: great-ink regular;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.63),
+      rgba(255, 255, 255, 0.63)
+    ),
+    url("grid-white.png"); /* Ruled paper image */
+  background-attachment: scroll;
+  line-height: 1.6;
+  background-color: #d6dbe7;
+}
+
+#whiteboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+canvas {
+  border: 2px solid #302f2f;
+  background-color: #fff;
+  cursor: crosshair;
+}
+
+#colors {
+  display: flex;
+  margin-top: 20px;
+}
+
+.color {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.color.selected {
+  border: 3px solid #000000;
+}
+
+#tools {
+  margin-top: 20px;
+}
+
+button,
+a {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 999;
+}
