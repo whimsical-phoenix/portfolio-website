@@ -186,8 +186,8 @@ document.addEventListener("DOMContentLoaded", function () {
   let eraserMode = false;
 
   // Set canvas size
-  canvas.width = 800;
-  canvas.height = 600;
+  canvas.width = 700;
+  canvas.height = 500;
 
   // Set initial color
   setCurrentColor("black");
