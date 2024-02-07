@@ -285,3 +285,24 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
+
+// JavaScript code for audio control and CD animation
+const audio = new Audio(
+  "clair-de-lune-suite-bergamasque-l-75-3rd-movement-claude-debussy-448s-11942.mp3"
+);
+
+function toggleAudio() {
+  if (audio.paused) {
+    audio.play();
+    document.querySelector(".cd").style.animationPlayState = "running"; // Start CD rotation animation
+  } else {
+    audio.pause();
+    document.querySelector(".cd").style.animationPlayState = "paused"; // Pause CD rotation animation
+  }
+}
+
+document.querySelector(".cd").addEventListener("click", toggleAudio);
+
+// Play audio when the page loads
+audio.play();
+document.querySelector(".cd").style.animationPlayState = "running"; // Start CD rotation animation
