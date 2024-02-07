@@ -16,11 +16,11 @@ body {
       rgba(255, 255, 255, 0.63)
     ),
     url("grid-white.png"); /* Ruled paper image */
-  background-attachment: scroll;
+  background-attachment: fixed;
   line-height: 1.6;
   background-color: #d6dbe7;
   color: #000103;
-  margin: auto;
+  margin: 0;
   padding: 13;
   font-family: great-ink regular;
   font-size: 30px;
@@ -31,7 +31,7 @@ body {
 }
 
 h1 {
-  padding-top: 1.5vh;
+  padding-top: 0.5ch;
   margin-left: 30vw;
   margin-bottom: 2vh;
   font-family: "smartie-caps regular";

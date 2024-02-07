@@ -13,6 +13,7 @@ body {
 
   font-family: "vtks-chalk-79 regular";
   text-align: center;
+  background-attachment: fixed;
 }
 
 input[type="radio"] {

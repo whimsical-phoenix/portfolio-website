@@ -11,12 +11,13 @@ html {
 }
 
 body {
+  margin: 0;
   background: linear-gradient(
       rgba(255, 255, 255, 0.63),
       rgba(255, 255, 255, 0.63)
     ),
     url("grid-white.png"); /* Ruled paper image */
-  background-attachment: scroll;
+  background-attachment: fixed;
   line-height: 1.6;
   background-color: #d6dbe7;
   color: #000103;
@@ -31,7 +32,7 @@ body {
 }
 
 h1 {
-  padding-top: 1ch;
+  margin-top: 0.2ch;
   margin-left: 8ch;
   margin-bottom: 2ch;
   font-family: "smartie-caps regular";
@@ -105,7 +106,7 @@ img {
 }
 
 footer {
-  margin-top: 40vh;
+  margin-top: 30vh;
   font-family: "great-ink regular";
   color: #000007;
   font-size: 2 rem;
