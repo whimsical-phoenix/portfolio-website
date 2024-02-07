@@ -122,7 +122,7 @@ footer {
 }
 
 .cd {
-  max-width: 12%;
+  max-width: 8rem;
   position: relative;
   animation: rotation 5s infinite linear; /* Add rotation animation */
   cursor: pointer;
