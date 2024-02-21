@@ -152,9 +152,9 @@ img {
 }
 
 .pine {
-  max-width: 22%;
-  margin-left: 800px;
-  position: relative;
+  max-width: 44%;
+
+  margin-left: 25rem;
 }
 
 @font-face {
@@ -166,7 +166,9 @@ img {
   font-family: "kg-flavor-and-frames-six regular";
   src: url(kg-flavor-and-frames-six.regular.ttf);
 }
-
+#resume-container {
+  display: flex;
+}
 #name {
   height: 200px;
   max-width: max-content;
@@ -333,7 +335,7 @@ span {
   border: 0;
   color: #050404;
   letter-spacing: 3px;
-  box-shadow: 6px 0px 0px #00e6f6;
+  box-shadow: 10px 3px 0px #00e6f6;
   outline: #000000 2px solid;
   position: relative;
   user-select: none;
@@ -673,8 +675,8 @@ a {
     margin-left: 65%;
   }
   .pine {
-    margin-left: 61%;
-    max-width: 34%;
+    margin-left: 21%;
+    max-width: 12%;
   }
   footer {
     text-align: center;
@@ -830,8 +832,8 @@ a {
   }
 
   .pine {
-    margin-left: 61%;
-    max-width: 34%;
+    margin-left: 21%;
+    max-width: 12%;
   }
   footer {
     max-width: 400px;
@@ -864,7 +866,7 @@ a {
   }
 
   #skills-container {
-    max-width: 100%;
+    max-width: 40%;
     overflow: visible;
     animation: infiniteScroll 50s linear infinite;
   }
