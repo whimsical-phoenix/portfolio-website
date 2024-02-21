@@ -179,6 +179,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const downloadButton = document.getElementById("download");
   const popup = document.getElementById("popup");
 
+  canvas.addEventListener("touchmove", function (event) {
+    event.preventDefault();
+  });
+
   let isDrawing = false;
   let lastX = 0;
   let lastY = 0;
