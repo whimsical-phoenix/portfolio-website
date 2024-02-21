@@ -31,7 +31,7 @@
 
             <li><a href="#portfolios">Projects</a></li>
             <li><a href="#contactMe">Contact</a></li>
-            <li><a href="#skills-container">Skills</a></li>
+            <li><a href="#resume-container">Resume</a></li>
           </ul>
         </nav>
       </div>
@@ -142,61 +142,79 @@
 
         <a href="mailto:shahprapti12@gmail.com" class="btn">Get in Touch</a>
       </div>
-    </main>
-    <div id="skills-container">
-      <!-- <h2 class="heading">Skills</h2> -->
-      <div id="skills-list" class="tag-list">
-        <!-- Skills will be dynamically added here using JavaScript -->
+
+      <div id="skills-container">
+        <!-- <h2 class="heading">Skills</h2> -->
+        <div id="skills-list" class="tag-list">
+          <!-- Skills will be dynamically added here using JavaScript -->
+        </div>
       </div>
-    </div>
 
-    <script>
-      const skillsContainer = document.getElementById("skills-list");
-      const skills = [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React",
-        "Responsive Design",
-        "Git",
-        "MongoDB",
-        "ADB Tools",
-        "Web Applications",
-        "Node",
-        "Express",
-        "UI/ UX",
-        "Figma",
-        "Canva",
-        "Animations",
-        "Typescript",
-        "API Integration",
-        "Agile Development",
-        "",
-      ];
+      <script>
+        const skillsContainer = document.getElementById("skills-list");
+        const skills = [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Responsive Design",
+          "Git",
+          "MongoDB",
+          "ADB Tools",
+          "Web Applications",
+          "Node",
+          "Express",
+          "UI/ UX",
+          "Figma",
+          "Canva",
+          "Animations",
+          "Typescript",
+          "API Integration",
+          "Agile Development",
+          "",
+        ];
 
-      function addSkillsToContainer() {
-        for (let i = 0; i < 18; i++) {
-          const skill = skills[i % skills.length];
-          const skillElement = document.createElement("div");
-          skillElement.classList.add("tag");
-          skillElement.innerHTML = `<span>#</span> ${skill}`;
-          skillsContainer.appendChild(skillElement);
+        function addSkillsToContainer() {
+          for (let i = 0; i < 18; i++) {
+            const skill = skills[i % skills.length];
+            const skillElement = document.createElement("div");
+            skillElement.classList.add("tag");
+            skillElement.innerHTML = `<span>#</span> ${skill}`;
+            skillsContainer.appendChild(skillElement);
+          }
         }
-      }
 
-      // Initial load
-      addSkillsToContainer();
+        // Initial load
+        addSkillsToContainer();
 
-      // Infinite scroll logic
-      window.addEventListener("scroll", () => {
-        const { scrollTop, scrollHeight, clientHeight } =
-          document.documentElement;
+        // Infinite scroll logic
+        window.addEventListener("scroll", () => {
+          const { scrollTop, scrollHeight, clientHeight } =
+            document.documentElement;
 
-        if (scrollTop + clientHeight >= scrollHeight - 10) {
-          addSkillsToContainer();
-        }
-      });
-    </script>
+          if (scrollTop + clientHeight >= scrollHeight - 10) {
+            addSkillsToContainer();
+          }
+        });
+      </script>
+
+      <div id="resume-container" class="ruled-paper">
+        <h2 class="heading">Resume</h2>
+        <div>
+          <a
+            id="download"
+            class="button-49"
+            href="Prapti-Shah-Resume.pdf"
+            download
+            >Download</a
+          >
+          <!-- <a href="/images/myw3schoolsimage.jpg" download>
+            <img src="path/to/your/image.jpg" alt="Your Image Alt Text" width="104" height="142">
+          </a> -->
+        </div>
+      </div>
+    </main>
+
     <img src="TreesFinal.png" alt="pine Trees" class="pine" />
     <footer>
       <div class="heart">u</div>
