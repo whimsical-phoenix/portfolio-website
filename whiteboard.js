@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const a = document.createElement("a");
     document.body.appendChild(a);
     a.href = url;
-    a.download = "whimsicalArt.png";
+    a.download = "whimsical-art.png";
     a.click();
     document.body.removeChild(a);
 
