@@ -58,6 +58,19 @@ canvas {
   border: 3px solid #6e6d6d66;
 }
 
+.color.selected {
+  border: 3px solid #000000;
+}
+
+/* #colorPicker {
+  width: 30px;
+  height: 30px;
+
+  border: 3px solid #6e6d6d66;
+  border-radius: 50%;
+  cursor: pointer;
+} */
+
 #tools {
   margin-top: 20px;
   text-align: center; /* Center align tools */

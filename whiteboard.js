@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const canvas = document.getElementById("canvas");
   const context = canvas.getContext("2d");
   const colors = document.querySelectorAll(".color");
+  const colorPicker = document.getElementById("colorPicker");
   const eraserButton = document.getElementById("eraser");
   const clearButton = document.getElementById("clear");
   const downloadButton = document.getElementById("download");
@@ -16,6 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
   let lastY = 0;
   let currentColor = "black";
   let eraserMode = false;
+
+  colorPicker.addEventListener("input", function () {
+    setCurrentColor(colorPicker.value); // Set current color to the color picked from the color picker
+    eraserMode = false; // Disable eraser mode when using color picker
+  });
 
   // Set canvas size
   canvas.width = 700;
