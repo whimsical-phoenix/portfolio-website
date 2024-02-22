@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Event listener for eraser button
   eraserButton.addEventListener("click", () => {
     eraserMode = true;
-    setCurrentColor("white");
+    setCurrentColor("transparent"); // Set current color to transparent for eraser mode
   });
 
   // Event listener for clear button
@@ -69,9 +69,14 @@ document.addEventListener("DOMContentLoaded", function () {
   function draw(e) {
     if (!isDrawing) return;
     const [x, y] = getMousePosition(e);
-    context.strokeStyle = currentColor;
     context.lineWidth = 5;
     context.lineCap = "round";
+    if (eraserMode) {
+      context.globalCompositeOperation = "destination-out"; // Set composite operation to 'destination-out' to clear pixels
+    } else {
+      context.globalCompositeOperation = "source-over"; // Reset composite operation to default
+      context.strokeStyle = currentColor; // Set current color
+    }
     context.beginPath();
     context.moveTo(lastX, lastY);
     context.lineTo(x, y);
