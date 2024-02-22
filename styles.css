@@ -631,7 +631,7 @@ a {
     z-index: -10;
     width: 0;
     height: 0;
-    margin: 30px 0 20px 20px;
+    margin: 80px 22px 22px 20px;
     background: radial-gradient(circle, #ab30d7, #05dcd2c7);
     border-radius: 50%;
     transition: 0.3s ease;
@@ -676,14 +676,14 @@ a {
   }
   .pine {
     margin-left: 21%;
-    max-width: 12%;
+    max-width: 24%;
   }
   footer {
     text-align: center;
     font-size: 2.2rem;
   }
   #sun {
-    max-width: 30%;
+    max-width: 32%;
   }
 }
 
@@ -783,7 +783,7 @@ a {
     z-index: -10;
     width: 0;
     height: 0;
-    margin: 30px 0 20px 20px;
+    margin: 80px 22px 22px 20px;
     background: radial-gradient(circle, #ab30d7, #05dcd2c7);
     border-radius: 50%;
     transition: 0.3s ease;
@@ -833,7 +833,7 @@ a {
 
   .pine {
     margin-left: 21%;
-    max-width: 12%;
+    max-width: 28%;
   }
   footer {
     max-width: 400px;
@@ -841,7 +841,7 @@ a {
     font-size: 2.2rem;
   }
   #sun {
-    max-width: 30%;
+    max-width: 32%;
   }
   .portfolio {
     max-width: 111%;
