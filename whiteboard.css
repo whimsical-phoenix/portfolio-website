@@ -14,18 +14,16 @@ html {
       rgba(255, 255, 255, 0.63)
     ),
     url("grid-white.png"); /* Ruled paper image */
-  /* background-attachment: scroll;
-  line-height: 1.6; */
   background-attachment: fixed;
   background-color: #d6dbe7;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2.5rem; /* Adjust for mobile */
   font-weight: 500;
   margin-top: 1rem;
   margin-bottom: 0;
-  padding-left: 30vw;
+  text-align: center; /* Center align for mobile */
 }
 
 #whiteboard {
@@ -41,37 +39,37 @@ canvas {
   border: 4px dashed #302f2f;
   background-color: #fff;
   cursor: crosshair;
+  max-width: 100%; /* Ensure canvas doesn't overflow on mobile */
 }
 
 #colors {
   display: flex;
+  flex-wrap: wrap; /* Allow colors to wrap on smaller screens */
+  justify-content: center; /* Center align colors */
   margin-top: 20px;
 }
 
 .color {
   width: 30px;
   height: 30px;
-  margin: 0 5px;
+  margin: 5px; /* Adjust margin for spacing between colors */
   border-radius: 50%;
   cursor: pointer;
   border: 3px solid #6e6d6d66;
 }
 
-.color.selected {
-  border: 3px solid #000000;
-}
-
 #tools {
   margin-top: 20px;
+  text-align: center; /* Center align tools */
 }
 
 button,
 a {
   font-family: great-ink regular;
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* Adjust font size for mobile */
   font-weight: 400;
   padding: 10px 20px;
-  margin: 0 10px;
+  margin: 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -80,12 +78,11 @@ a {
   color: black;
   text-decoration: none;
 }
-/* .eraser {
-} */
 
 a:hover {
   background-color: #e9e91cba;
 }
+
 button:hover {
   background-color: #0056b3;
 }
@@ -115,14 +112,14 @@ footer {
 
 .flex {
   display: flex;
-  justify-content: flex-start; /* Align content to the start of the flex container */
-  align-items: center; /* Align items vertically in the flex container */
+  justify-content: center; /* Center align content */
+  align-items: center; /* Center align items vertically */
   width: 100%; /* Ensure it spans the full width */
   padding-left: 20px; /* Adjust as needed */
 }
 
 .cd {
-  max-width: 8rem;
+  max-width: 9rem;
   position: relative;
   animation: rotation 5s infinite linear; /* Add rotation animation */
   cursor: pointer;
@@ -134,5 +131,38 @@ footer {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    padding-left: 0; /* Remove left padding */
+  }
+
+  #colors {
+    margin-top: 10px; /* Reduce margin top */
+  }
+
+  .color {
+    width: 25px; /* Adjust color size */
+    height: 25px;
+    margin: 3px; /* Reduce margin for smaller screens */
+  }
+
+  button,
+  a {
+    font-size: 1.3rem; /* Adjust font size for smaller screens */
+  }
+
+  canvas {
+    width: 90vw;
+    height: 40vh;
+  }
+
+  footer {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    padding-right: 20px; /* Reduce right padding */
   }
 }
