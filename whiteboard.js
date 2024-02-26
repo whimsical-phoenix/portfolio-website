@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const clearButton = document.getElementById("clear");
   const downloadButton = document.getElementById("download");
   const popup = document.getElementById("popup");
+  const audio = new Audio(
+    "clair-de-lune-suite-bergamasque-l-75-3rd-movement-claude-debussy-448s-11942.mp3"
+  );
 
   canvas.addEventListener("touchmove", function (event) {
     event.preventDefault();
@@ -23,14 +26,11 @@ document.addEventListener("DOMContentLoaded", function () {
     eraserMode = false; // Disable eraser mode when using color picker
   });
 
-  // Set canvas size
   canvas.width = 700;
   canvas.height = 500;
 
-  // Set initial color
   setCurrentColor("black");
 
-  // Event listeners for color selection
   colors.forEach((color) => {
     color.addEventListener("click", () => {
       setCurrentColor(color.style.backgroundColor);
@@ -38,25 +38,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Event listener for eraser button
   eraserButton.addEventListener("click", () => {
     eraserMode = true;
     setCurrentColor("transparent"); // Set current color to transparent for eraser mode
   });
 
-  // Event listener for clear button
   clearButton.addEventListener("click", clearCanvas);
 
-  // Event listener for download button
   downloadButton.addEventListener("click", downloadCanvas);
 
-  // Mouse event listeners
   canvas.addEventListener("mousedown", startDrawing);
   canvas.addEventListener("mousemove", draw);
   canvas.addEventListener("mouseup", () => (isDrawing = false));
   canvas.addEventListener("mouseout", () => (isDrawing = false));
 
-  // Touch event listeners
   canvas.addEventListener("touchstart", startDrawing);
   canvas.addEventListener("touchmove", draw);
   canvas.addEventListener("touchend", () => (isDrawing = false));
@@ -69,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function draw(e) {
     if (!isDrawing) return;
     const [x, y] = getMousePosition(e);
-    context.lineWidth = 5;
+    context.lineWidth = eraserMode ? 20 : 5; // Increase eraser size to 20 when in eraser mode, otherwise use default size of 5
     context.lineCap = "round";
     if (eraserMode) {
       context.globalCompositeOperation = "destination-out"; // Set composite operation to 'destination-out' to clear pixels
@@ -86,9 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function setCurrentColor(color) {
     currentColor = color;
-    // Remove 'selected' class from all colors
     colors.forEach((color) => color.classList.remove("selected"));
-    // Add 'selected' class to the current color
     const selectedColor = Array.from(colors).find(
       (c) => c.style.backgroundColor === color
     );
@@ -127,25 +120,12 @@ document.addEventListener("DOMContentLoaded", function () {
       return [e.clientX - rect.left, e.clientY - rect.top];
     }
   }
+
+  audio.addEventListener("ended", function () {
+    this.currentTime = 0; // Reset the audio to the beginning
+    this.play(); // Play the audio again
+  });
+
+  // Play audio when the page loads
+  audio.play();
 });
-
-// JavaScript code for audio control and CD animation
-const audio = new Audio(
-  "clair-de-lune-suite-bergamasque-l-75-3rd-movement-claude-debussy-448s-11942.mp3"
-);
-
-function toggleAudio() {
-  if (audio.paused) {
-    audio.play();
-    document.querySelector(".cd").style.animationPlayState = "running"; // Start CD rotation animation
-  } else {
-    audio.pause();
-    document.querySelector(".cd").style.animationPlayState = "paused"; // Pause CD rotation animation
-  }
-}
-
-document.querySelector(".cd").addEventListener("click", toggleAudio);
-
-// Play audio when the page loads
-audio.play();
-document.querySelector(".cd").style.animationPlayState = "running"; // Start CD rotation animation
